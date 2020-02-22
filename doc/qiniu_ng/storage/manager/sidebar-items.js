@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["DropBucketError","删除存储空间错误"]],"struct":[["StorageManager","存储管理器"]],"type":[["DropBucketResult","删除存储空间结果"]]});

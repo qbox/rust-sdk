@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["ETAG_SIZE","Etag 字符串固定长度"]],"fn":[["from","读取输入流并计算 Etag"],["from_bytes","根据给出的数据计算 Etag"],["from_file","根据给出的文件内容计算 Etag"],["new","创建一个 Etag 计算器"],["new_reader","创建一个 Etag 读取器"]],"struct":[["Etag","七牛 Etag 计算器"],["Reader","一个 Etag 读取器"]]});

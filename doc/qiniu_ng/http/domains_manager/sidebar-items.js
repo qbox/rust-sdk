@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PersistentError","持久化错误"],["ResolveError","URL 域名解析错误"],["URLParseError","URL 解析错误"]],"struct":[["Choice","候选 URL"],["DomainsManager","域名管理器"],["DomainsManagerBuilder","域名管理器生成器"]],"type":[["PersistentResult","持久化结果"],["ResolveResult","URL 域名解析结果"],["URLParseResult","URL 解析结果"]]});

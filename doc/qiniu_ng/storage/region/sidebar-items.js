@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["RegionId","存储区域 ID"]],"struct":[["Region","区域"],["RegionBuilder","Builder for `Region`."]]});

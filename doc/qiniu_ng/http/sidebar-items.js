@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["ErrorKind",""],["HTTPCallerErrorKind",""],["Method",""],["RetryKind",""]],"mod":[["domains_manager","域名管理 模块"]],"struct":[["Error",""],["HeaderName",""]],"trait":[["HTTPAfterAction","HTTP 请求响应后回调函数"],["HTTPBeforeAction","HTTP 请求前回调函数"],["HTTPCaller",""]],"type":[["HeaderValue",""],["Headers",""],["Result",""],["StatusCode",""]]});
