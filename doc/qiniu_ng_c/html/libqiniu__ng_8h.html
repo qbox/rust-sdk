@@ -492,6 +492,9 @@ $(document).ready(function(){initNavTree('libqiniu__ng_8h.html','');});
 <tr class="memitem:a6f83f65f3953e29bc66c5b0e05e57464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a6f83f65f3953e29bc66c5b0e05e57464">qiniu_ng_config_builder_set_appended_user_agent</a> (<a class="el" href="structqiniu__ng__config__builder__t.html">qiniu_ng_config_builder_t</a> builder, const <a class="el" href="libqiniu__ng_8h.html#aefc35b9037a2f643594316d4872fcd60">qiniu_ng_char_t</a> *user_agent)</td></tr>
 <tr class="memdesc:a6f83f65f3953e29bc66c5b0e05e57464"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定客户端配置的追加用户代理  <a href="#a6f83f65f3953e29bc66c5b0e05e57464">更多...</a><br /></td></tr>
 <tr class="separator:a6f83f65f3953e29bc66c5b0e05e57464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8d451d2ec8ee530175e9c6f7164396"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a4c8d451d2ec8ee530175e9c6f7164396">qiniu_ng_config_builder_set_http_call_handler</a> (<a class="el" href="structqiniu__ng__config__builder__t.html">qiniu_ng_config_builder_t</a> builder, void(*handler)(<a class="el" href="structqiniu__ng__http__request__t.html">qiniu_ng_http_request_t</a> request, <a class="el" href="structqiniu__ng__http__response__t.html">qiniu_ng_http_response_t</a> response, <a class="el" href="structqiniu__ng__callback__err__t.html">qiniu_ng_callback_err_t</a> *err))</td></tr>
+<tr class="memdesc:a4c8d451d2ec8ee530175e9c6f7164396"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 HTTP 请求处理回调函数  <a href="#a4c8d451d2ec8ee530175e9c6f7164396">更多...</a><br /></td></tr>
+<tr class="separator:a4c8d451d2ec8ee530175e9c6f7164396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6281d54b1293d9c66a2ef283c2ea2721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a6281d54b1293d9c66a2ef283c2ea2721">qiniu_ng_config_builder_tcp_keepalive_idle_timeout</a> (<a class="el" href="structqiniu__ng__config__builder__t.html">qiniu_ng_config_builder_t</a> builder, uint64_t tcp_keepalive_idle_timeout)</td></tr>
 <tr class="memdesc:a6281d54b1293d9c66a2ef283c2ea2721"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定客户端配置中的 TCP KeepAlive 空闲时长  <a href="#a6281d54b1293d9c66a2ef283c2ea2721">更多...</a><br /></td></tr>
 <tr class="separator:a6281d54b1293d9c66a2ef283c2ea2721"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3994,6 +3997,44 @@ SDK 会自动重试，或出错退出
   </dd>
 </dl>
 <dl class="section note"><dt>注解</dt><dd>调用该方法时，输入的 <code>user_agent</code> 将被复制并存储，因此 <code>user_agent</code> 的调用完毕后即可释放 </dd></dl>
+
+</div>
+</div>
+<a id="a4c8d451d2ec8ee530175e9c6f7164396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8d451d2ec8ee530175e9c6f7164396">&#9670;&nbsp;</a></span>qiniu_ng_config_builder_set_http_call_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qiniu_ng_config_builder_set_http_call_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqiniu__ng__config__builder__t.html">qiniu_ng_config_builder_t</a>&#160;</td>
+          <td class="paramname"><em>builder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="structqiniu__ng__http__request__t.html">qiniu_ng_http_request_t</a> request, <a class="el" href="structqiniu__ng__http__response__t.html">qiniu_ng_http_response_t</a> response, <a class="el" href="structqiniu__ng__callback__err__t.html">qiniu_ng_callback_err_t</a> *err)&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 HTTP 请求处理回调函数 </p>
+<p>SDK 本身并不直接包含 HTTP 请求处理逻辑，而是根据编译参数，依赖于外部扩展的请求处理逻辑实现。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">builder</td><td>客户端配置生成器实例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>回调函数。回调函数的第一个参数是传入的的 HTTP 请求，可以参考 <code><a class="el" href="structqiniu__ng__http__request__t.html" title="HTTP 请求 ">qiniu_ng_http_request_t</a></code> 的文档了解其用法，第二个参数是即将返回的 HTTP 响应，可以参考 <code><a class="el" href="structqiniu__ng__http__response__t.html" title="HTTP 响应 ">qiniu_ng_http_response_t</a></code> 的文档了解其用法。而第三个参数则用来填充具体的错误信息，可以参考 <code><a class="el" href="structqiniu__ng__callback__err__t.html" title="HTTP 处理相关错误结构体 ">qiniu_ng_callback_err_t</a></code> 的文档了解其用法，如果没有错误，则无需修改 <code>err</code> 参数的值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>如果发生错误，您需要调用 <code><a class="el" href="structqiniu__ng__err__t.html" title="SDK 错误 ">qiniu_ng_err_t</a></code> 的创建函数对 <code>err</code> 中的 <code>error</code> 字段赋值，但内存释放函数无需您调用，将由 SDK 负责内存回收 </dd></dl>
 
 </div>
 </div>
@@ -13451,7 +13492,7 @@ SDK 会自动重试，或出错退出
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="libqiniu__ng_8h.html">libqiniu_ng.h</a></li>
-    <li class="footer">生成于 2020年 二月 22日 星期六 05:49:50 , 为 libqiniu_ng使用 
+    <li class="footer">生成于 2020年 二月 22日 星期六 08:46:18 , 为 libqiniu_ng使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

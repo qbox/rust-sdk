@@ -62,6 +62,7 @@ var searchData=
   ['qiniu_5fng_5fconfig_5fbuilder_5frs_5fhost',['qiniu_ng_config_builder_rs_host',['../libqiniu__ng_8h.html#a51617f22e5b368dc5d324336d4eff9b9',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fconfig_5fbuilder_5frsf_5fhost',['qiniu_ng_config_builder_rsf_host',['../libqiniu__ng_8h.html#afbe12df9cb368044762b573206dd92f6',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fconfig_5fbuilder_5fset_5fappended_5fuser_5fagent',['qiniu_ng_config_builder_set_appended_user_agent',['../libqiniu__ng_8h.html#a6f83f65f3953e29bc66c5b0e05e57464',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5fconfig_5fbuilder_5fset_5fhttp_5fcall_5fhandler',['qiniu_ng_config_builder_set_http_call_handler',['../libqiniu__ng_8h.html#a4c8d451d2ec8ee530175e9c6f7164396',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fconfig_5fbuilder_5ftcp_5fkeepalive_5fidle_5ftimeout',['qiniu_ng_config_builder_tcp_keepalive_idle_timeout',['../libqiniu__ng_8h.html#a6281d54b1293d9c66a2ef283c2ea2721',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fconfig_5fbuilder_5ftcp_5fkeepalive_5fprobe_5finterval',['qiniu_ng_config_builder_tcp_keepalive_probe_interval',['../libqiniu__ng_8h.html#ac48d7e7b92a403058cacba950f6de352',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fconfig_5fbuilder_5fuc_5fhost',['qiniu_ng_config_builder_uc_host',['../libqiniu__ng_8h.html#ace126022b06e3f19d0ee618b19c4044a',1,'libqiniu_ng.h']]],
