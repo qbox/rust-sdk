@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['qiniu_5fng_5fcurl_5ferror_5fkind_5ft',['qiniu_ng_curl_error_kind_t',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5ferr_5fkind_5ft_5ftag',['qiniu_ng_err_kind_t_Tag',['../libqiniu__ng_8h.html#a1d855d17f69dc7c7ca396c977ac2aa1d',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fhttp_5fmethod_5ft',['qiniu_ng_http_method_t',['../libqiniu__ng_8h.html#a2e66bda112f6432dda44d0442307d218',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5finvalid_5fupload_5ftoken_5ferror_5fkind_5ft_5ftag',['qiniu_ng_invalid_upload_token_error_kind_t_Tag',['../libqiniu__ng_8h.html#aa6c06682e4ece2b7c543b1352ad18852',1,'libqiniu_ng.h']]],

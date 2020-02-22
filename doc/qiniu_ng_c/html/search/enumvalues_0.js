@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['qiniu_5fng_5fconnection_5ferror',['qiniu_ng_connection_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828a0257b9afdd8e1767cc2ebbae274d9ca0',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5ferr_5fkind_5fbad_5fmime_5ftype',['qiniu_ng_err_kind_bad_mime_type',['../libqiniu__ng_8h.html#a1d855d17f69dc7c7ca396c977ac2aa1da4f2e4af2a0d76a98ca67743817670831',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5ferr_5fkind_5fcurl_5ferror',['qiniu_ng_err_kind_curl_error',['../libqiniu__ng_8h.html#a1d855d17f69dc7c7ca396c977ac2aa1da268e8f6a143a930ab02589fcf80e5120',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5ferr_5fkind_5fdrop_5fnon_5fempty_5fbucket_5ferror',['qiniu_ng_err_kind_drop_non_empty_bucket_error',['../libqiniu__ng_8h.html#a1d855d17f69dc7c7ca396c977ac2aa1dac645c67f76d4298f8d481d615187e345',1,'libqiniu_ng.h']]],
@@ -23,11 +24,15 @@ var searchData=
   ['qiniu_5fng_5flock_5fpolicy_5falways_5flock_5fexclusive',['qiniu_ng_lock_policy_always_lock_exclusive',['../libqiniu__ng_8h.html#a91ec92f610303b24e1d85f23bf08a2a5a445b2f885870becf9537b2a0dccac6b1',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5flock_5fpolicy_5flock_5fshared_5fduration_5fappending_5fand_5flock_5fexclusive_5fduration_5fuploading',['qiniu_ng_lock_policy_lock_shared_duration_appending_and_lock_exclusive_duration_uploading',['../libqiniu__ng_8h.html#a91ec92f610303b24e1d85f23bf08a2a5a5e8dedf8b165f7092849fee52cd573c1',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5flock_5fpolicy_5fnone',['qiniu_ng_lock_policy_none',['../libqiniu__ng_8h.html#a91ec92f610303b24e1d85f23bf08a2a5a087c1608840e32e77173263907a21a24',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5fproxy_5ferror',['qiniu_ng_proxy_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828a4054bdfc69cdca237e4ace1db9ac9c3e',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fas0',['qiniu_ng_region_as0',['../libqiniu__ng_8h.html#a9ae75e3460fff59705952a4c334f8752ac06f0b583ca7ab916898467e2314dabc',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fna0',['qiniu_ng_region_na0',['../libqiniu__ng_8h.html#a9ae75e3460fff59705952a4c334f8752a9bf3c7d07822ec11329aaef0d9059fc9',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fz0',['qiniu_ng_region_z0',['../libqiniu__ng_8h.html#a9ae75e3460fff59705952a4c334f8752abed0d27de2272179066cdd028c917713',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fz1',['qiniu_ng_region_z1',['../libqiniu__ng_8h.html#a9ae75e3460fff59705952a4c334f8752a512be69a6c2f435442f0c49af9f4829c',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fz2',['qiniu_ng_region_z2',['../libqiniu__ng_8h.html#a9ae75e3460fff59705952a4c334f8752a9c15452d3f191766ea8477aa376e3266',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5frequest_5ferror',['qiniu_ng_request_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828a59904742defa3bf22af6145cbe61ae52',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5fresolve_5ferror',['qiniu_ng_resolve_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828ae1d6caab0f4c31f656a4de076e627141',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5fresponse_5ferror',['qiniu_ng_response_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828a098e2d2aed71b8a864710e798491a396',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fresumable_5fpolicy_5falways_5fbe_5fresumeable',['qiniu_ng_resumable_policy_always_be_resumeable',['../libqiniu__ng_8h.html#a1c763ee31f5926c5ff46afbc753f1878aa435d4736d10ab3341e5477087da0474',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fresumable_5fpolicy_5fdefault',['qiniu_ng_resumable_policy_default',['../libqiniu__ng_8h.html#a1c763ee31f5926c5ff46afbc753f1878af09d26430982683a4ee5988567f3caa6',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fresumable_5fpolicy_5fnever_5fbe_5fresumeable',['qiniu_ng_resumable_policy_never_be_resumeable',['../libqiniu__ng_8h.html#a1c763ee31f5926c5ff46afbc753f1878a392d6bdfe9cf176cf78c992bae800ce1',1,'libqiniu_ng.h']]],
@@ -35,5 +40,8 @@ var searchData=
   ['qiniu_5fng_5fretry_5fkind_5fhost_5funretryable_5ferror',['qiniu_ng_retry_kind_host_unretryable_error',['../libqiniu__ng_8h.html#a993db24d4b4d4b3c153926c02d940662a3254d3623d220096b81e2ca9e88e6e97',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fretry_5fkind_5fretryable_5ferror',['qiniu_ng_retry_kind_retryable_error',['../libqiniu__ng_8h.html#a993db24d4b4d4b3c153926c02d940662a37bd388c936ddc8756a26998667110de',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fretry_5fkind_5funretryable_5ferror',['qiniu_ng_retry_kind_unretryable_error',['../libqiniu__ng_8h.html#a993db24d4b4d4b3c153926c02d940662a665e513d19f93fd1bd8bb7086bd5bd19',1,'libqiniu_ng.h']]],
-  ['qiniu_5fng_5fretry_5fkind_5fzone_5funretryable_5ferror',['qiniu_ng_retry_kind_zone_unretryable_error',['../libqiniu__ng_8h.html#a993db24d4b4d4b3c153926c02d940662ab008b0a053e2b337dd8c5446207897ac',1,'libqiniu_ng.h']]]
+  ['qiniu_5fng_5fretry_5fkind_5fzone_5funretryable_5ferror',['qiniu_ng_retry_kind_zone_unretryable_error',['../libqiniu__ng_8h.html#a993db24d4b4d4b3c153926c02d940662ab008b0a053e2b337dd8c5446207897ac',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5fssl_5ferror',['qiniu_ng_ssl_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828a39e99c4131a8911cdc140b85dfd6d16c',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5ftimeout_5ferror',['qiniu_ng_timeout_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828ac295aceb56e243d887f6fbfcd774559c',1,'libqiniu_ng.h']]],
+  ['qiniu_5fng_5funknown_5ferror',['qiniu_ng_unknown_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828a36dcf993f209a96bb11130f715d918b4',1,'libqiniu_ng.h']]]
 ];

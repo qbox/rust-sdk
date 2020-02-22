@@ -1,13 +1,14 @@
 var indexSectionsWithContent =
 {
-  0: "cefiklmoqrtuv",
+  0: "cefiklmoqrtuvä",
   1: "q",
   2: "l",
   3: "q",
   4: "cefikmortuv",
   5: "q",
   6: "q",
-  7: "q"
+  7: "q",
+  8: "ä"
 };
 
 var indexSectionNames =
@@ -19,7 +20,8 @@ var indexSectionNames =
   4: "variables",
   5: "enums",
   6: "enumvalues",
-  7: "defines"
+  7: "defines",
+  8: "pages"
 };
 
 var indexSectionLabels =
@@ -31,6 +33,7 @@ var indexSectionLabels =
   4: "变量",
   5: "枚举",
   6: "枚举值",
-  7: "宏定义"
+  7: "宏定义",
+  8: "页"
 };
 
