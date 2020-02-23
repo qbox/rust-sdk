@@ -50,8 +50,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"libqiniu__ng_8h.html#a93452e025a8d451e41f38c680fd50a93",
-"structqiniu__ng__upload__params__t.html#aaf8d491c94e1d6779559cc57bd05e2a7"
+"libqiniu__ng_8h.html#a92d9317d287663132f6f8b65b1104107",
+"structqiniu__ng__upload__params__t.html#aa39b1d9eeb5fdca41eef72b03f80108d"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

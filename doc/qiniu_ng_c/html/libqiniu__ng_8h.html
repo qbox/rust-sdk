@@ -894,6 +894,9 @@ $(document).ready(function(){initNavTree('libqiniu__ng_8h.html','');});
 <tr class="memitem:afcac01c0253a81c7774252a7a452c0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#afcac01c0253a81c7774252a7a452c0ac">qiniu_ng_http_response_unset_server_ip</a> (<a class="el" href="structqiniu__ng__http__response__t.html">qiniu_ng_http_response_t</a> response)</td></tr>
 <tr class="memdesc:afcac01c0253a81c7774252a7a452c0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置 HTTP 请求预解析的服务器 IP 地址  <a href="#afcac01c0253a81c7774252a7a452c0ac">更多...</a><br /></td></tr>
 <tr class="separator:afcac01c0253a81c7774252a7a452c0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624f19de96ab604b191cda7bde422465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a624f19de96ab604b191cda7bde422465">qiniu_ng_recreate_global_thread_pool</a> (size_t num_threads)</td></tr>
+<tr class="memdesc:a624f19de96ab604b191cda7bde422465"><td class="mdescLeft">&#160;</td><td class="mdescRight">重新创建 qiniu_ng 使用的全局线程池  <a href="#a624f19de96ab604b191cda7bde422465">更多...</a><br /></td></tr>
+<tr class="separator:a624f19de96ab604b191cda7bde422465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ce2858c9594c7374eea6963ba0476f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqiniu__ng__region__t.html">qiniu_ng_region_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a29ce2858c9594c7374eea6963ba0476f">qiniu_ng_region_build</a> (<a class="el" href="structqiniu__ng__region__builder__t.html">qiniu_ng_region_builder_t</a> builder)</td></tr>
 <tr class="memdesc:a29ce2858c9594c7374eea6963ba0476f"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成区域实例  <a href="#a29ce2858c9594c7374eea6963ba0476f">更多...</a><br /></td></tr>
 <tr class="separator:a29ce2858c9594c7374eea6963ba0476f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8949,6 +8952,38 @@ SDK 会自动重试，或出错退出
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>HTTP 响应实例 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a624f19de96ab604b191cda7bde422465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624f19de96ab604b191cda7bde422465">&#9670;&nbsp;</a></span>qiniu_ng_recreate_global_thread_pool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qiniu_ng_recreate_global_thread_pool </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_threads</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重新创建 qiniu_ng 使用的全局线程池 </p>
+<p>仅在某些情况下（例如，在线程池已经被初始化后 fork 进程，则在子进程内，线程池存储的线程具柄无法使用）才需要调用该方法。 使用该方法也可以用于调整全局线程池线程数量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_threads</td><td>调整全局线程池数量。如果传入 0，则表示不改变线程池数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">*char</td><td>版本号字符串 </td></tr>
   </table>
   </dd>
 </dl>

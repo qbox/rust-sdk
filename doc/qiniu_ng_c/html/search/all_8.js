@@ -251,6 +251,7 @@ var searchData=
   ['qiniu_5fng_5flock_5fpolicy_5fnone',['qiniu_ng_lock_policy_none',['../libqiniu__ng_8h.html#a91ec92f610303b24e1d85f23bf08a2a5a087c1608840e32e77173263907a21a24',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fproxy_5ferror',['qiniu_ng_proxy_error',['../libqiniu__ng_8h.html#acd99a3efa6cdac3a18daa5f30a82d828a4054bdfc69cdca237e4ace1db9ac9c3e',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5freadable_5ft',['qiniu_ng_readable_t',['../structqiniu__ng__readable__t.html',1,'']]],
+  ['qiniu_5fng_5frecreate_5fglobal_5fthread_5fpool',['qiniu_ng_recreate_global_thread_pool',['../libqiniu__ng_8h.html#a624f19de96ab604b191cda7bde422465',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fas0',['qiniu_ng_region_as0',['../libqiniu__ng_8h.html#a9ae75e3460fff59705952a4c334f8752ac06f0b583ca7ab916898467e2314dabc',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fbuild',['qiniu_ng_region_build',['../libqiniu__ng_8h.html#a29ce2858c9594c7374eea6963ba0476f',1,'libqiniu_ng.h']]],
   ['qiniu_5fng_5fregion_5fbuilder_5fappend_5fapi_5fhttp_5furl',['qiniu_ng_region_builder_append_api_http_url',['../libqiniu__ng_8h.html#a99dcfa44e0533e9e3fb6de0ef0dc8954',1,'libqiniu_ng.h']]],

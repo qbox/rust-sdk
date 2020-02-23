@@ -117,7 +117,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>_0</b></td></tr>
 </ul>
 </dd>
 <dd>
-该结构体内部状态不可变，因此可以跨线程使用 </dd></dl>
+该结构体内部状态不可变，因此可以跨线程使用，但由于可能会自带线程池，所以不要跨进程使用，否则可能会发生线程池无法使用的问题 </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
