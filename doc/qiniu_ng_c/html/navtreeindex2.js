@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"structqiniu__ng__upload__params__t.html#a6baaf839fe3de0e37be98fc78d5e4997":[1,0,32,0],
+"structqiniu__ng__upload__params__t.html#a79978c04bb57d9fd3cad0c18c3610d0a":[1,0,32,10],
+"structqiniu__ng__upload__params__t.html#a8b461dfa644cc19fa6ea86e6bf2660e6":[1,0,32,2],
 "structqiniu__ng__upload__params__t.html#aa39b1d9eeb5fdca41eef72b03f80108d":[1,0,32,1],
 "structqiniu__ng__upload__params__t.html#aaf8d491c94e1d6779559cc57bd05e2a7":[1,0,32,9],
 "structqiniu__ng__upload__params__t.html#ac0f950e0639f51a398289167ef745e17":[1,0,32,5],

@@ -381,6 +381,15 @@ $(document).ready(function(){initNavTree('libqiniu__ng_8h.html','');});
 <tr class="memitem:a5d708468cb8fedee54a844ac03eebcaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a5d708468cb8fedee54a844ac03eebcaf">qiniu_ng_client_free</a> (<a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a> *client)</td></tr>
 <tr class="memdesc:a5d708468cb8fedee54a844ac03eebcaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放 七牛 SDK 客户端实例  <a href="#a5d708468cb8fedee54a844ac03eebcaf">更多...</a><br /></td></tr>
 <tr class="separator:a5d708468cb8fedee54a844ac03eebcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500724467f41795fa7fd9f353b96fc48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqiniu__ng__str__t.html">qiniu_ng_str_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a500724467f41795fa7fd9f353b96fc48">qiniu_ng_client_get_access_key</a> (<a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a> client)</td></tr>
+<tr class="memdesc:a500724467f41795fa7fd9f353b96fc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取客户端的 Access Key  <a href="#a500724467f41795fa7fd9f353b96fc48">更多...</a><br /></td></tr>
+<tr class="separator:a500724467f41795fa7fd9f353b96fc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546b4c78541bbdcc823037bacf795fe9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqiniu__ng__config__t.html">qiniu_ng_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a546b4c78541bbdcc823037bacf795fe9">qiniu_ng_client_get_config</a> (<a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a> client)</td></tr>
+<tr class="memdesc:a546b4c78541bbdcc823037bacf795fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取客户端的配置  <a href="#a546b4c78541bbdcc823037bacf795fe9">更多...</a><br /></td></tr>
+<tr class="separator:a546b4c78541bbdcc823037bacf795fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b6ef1d3676b126657a9d6a521c2447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqiniu__ng__str__t.html">qiniu_ng_str_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a85b6ef1d3676b126657a9d6a521c2447">qiniu_ng_client_get_secret_key</a> (<a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a> client)</td></tr>
+<tr class="memdesc:a85b6ef1d3676b126657a9d6a521c2447"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取客户端的 Secret Key  <a href="#a85b6ef1d3676b126657a9d6a521c2447">更多...</a><br /></td></tr>
+<tr class="separator:a85b6ef1d3676b126657a9d6a521c2447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6648da7050da9345b88908929dc283cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqiniu__ng__upload__manager__t.html">qiniu_ng_upload_manager_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libqiniu__ng_8h.html#a6648da7050da9345b88908929dc283cf">qiniu_ng_client_get_upload_manager</a> (<a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a> client)</td></tr>
 <tr class="memdesc:a6648da7050da9345b88908929dc283cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建上传管理器  <a href="#a6648da7050da9345b88908929dc283cf">更多...</a><br /></td></tr>
 <tr class="separator:a6648da7050da9345b88908929dc283cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2603,6 +2612,105 @@ $(document).ready(function(){initNavTree('libqiniu__ng_8h.html','');});
 
 </div>
 </div>
+<a id="a500724467f41795fa7fd9f353b96fc48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500724467f41795fa7fd9f353b96fc48">&#9670;&nbsp;</a></span>qiniu_ng_client_get_access_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structqiniu__ng__str__t.html">qiniu_ng_str_t</a> qiniu_ng_client_get_access_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a>&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取客户端的 Access Key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>七牛 SDK 客户端实例 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="structqiniu__ng__str__t.html" title="字符串 ">qiniu_ng_str_t</a></td><td>返回客户端的 Access Key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>对于获取的 Access Key，使用完毕后应该调用 <code><a class="el" href="libqiniu__ng_8h.html#ab14b2f57298bb867674919998464410d" title="释放字符串实例 ">qiniu_ng_str_free()</a></code> 释放其内存 </dd></dl>
+
+</div>
+</div>
+<a id="a546b4c78541bbdcc823037bacf795fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546b4c78541bbdcc823037bacf795fe9">&#9670;&nbsp;</a></span>qiniu_ng_client_get_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structqiniu__ng__config__t.html">qiniu_ng_config_t</a> qiniu_ng_client_get_config </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a>&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取客户端的配置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>七牛 SDK 客户端实例 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="structqiniu__ng__config__t.html" title="客户端配置 ">qiniu_ng_config_t</a></td><td>返回客户端的配置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>对于获取的客户端配置，使用完毕后应该调用 <code><a class="el" href="libqiniu__ng_8h.html#a77aa89557cfd2858f8025708716baa34" title="释放客户端配置实例 ">qiniu_ng_config_free()</a></code> 释放其内存 </dd></dl>
+
+</div>
+</div>
+<a id="a85b6ef1d3676b126657a9d6a521c2447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b6ef1d3676b126657a9d6a521c2447">&#9670;&nbsp;</a></span>qiniu_ng_client_get_secret_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structqiniu__ng__str__t.html">qiniu_ng_str_t</a> qiniu_ng_client_get_secret_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqiniu__ng__client__t.html">qiniu_ng_client_t</a>&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取客户端的 Secret Key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>七牛 SDK 客户端实例 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="structqiniu__ng__str__t.html" title="字符串 ">qiniu_ng_str_t</a></td><td>返回客户端的 Secret Key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>对于获取的 Secret Key，使用完毕后应该调用 <code><a class="el" href="libqiniu__ng_8h.html#ab14b2f57298bb867674919998464410d" title="释放字符串实例 ">qiniu_ng_str_free()</a></code> 释放其内存 </dd></dl>
+
+</div>
+</div>
 <a id="a6648da7050da9345b88908929dc283cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6648da7050da9345b88908929dc283cf">&#9670;&nbsp;</a></span>qiniu_ng_client_get_upload_manager()</h2>
 
@@ -2633,6 +2741,7 @@ $(document).ready(function(){initNavTree('libqiniu__ng_8h.html','');});
   </dd>
 </dl>
 <dl class="section note"><dt>注解</dt><dd><code><a class="el" href="libqiniu__ng_8h.html#a573e2ac2c112067167d9d4122b4e1dfb" title="创建上传管理器实例 ">qiniu_ng_upload_manager_new()</a></code> 可能是更简单的创建上传管理器的方法，仅需要客户端配置即可创建。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>对于获取的上传管理器，使用完毕后应该调用 <code><a class="el" href="libqiniu__ng_8h.html#a975e9ae7df454dc0759c44b7dfaebe6b" title="释放上传管理器实例 ">qiniu_ng_upload_manager_free()</a></code> 释放其内存 </dd></dl>
 
 </div>
 </div>
@@ -10359,7 +10468,7 @@ SDK 会自动重试，或出错退出
 </div><div class="memdoc">
 
 <p>删除存储空间 </p>
-<dl class="params"><dt>参数</dt><dd>
+<p>删除存储空间前务必保证存储空间里已经没有任何文件，否则删除将会失败 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>七牛客户端 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bucket_name</td><td>即将删除的存储空间名称 </td></tr>
