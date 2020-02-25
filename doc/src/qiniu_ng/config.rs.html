@@ -680,7 +680,7 @@
 
     <span class="doccomment">/// UC 服务器地址（仅需要指定主机地址和端口，无需包含协议）</span>
     <span class="doccomment">///</span>
-    <span class="doccomment">///默认将会使用七牛公有云的 UC 服务器地址， 仅在使用私有云时才需要配置</span>
+    <span class="doccomment">/// 默认将会使用七牛公有云的 UC 服务器地址，仅在使用私有云时才需要配置</span>
     <span class="attribute">#[<span class="ident">get</span> <span class="op">=</span> <span class="string">&quot;pub&quot;</span>]</span>
     <span class="attribute">#[<span class="ident">builder</span>(<span class="ident">default</span> <span class="op">=</span> <span class="string">&quot;default::uc_host()&quot;</span>, <span class="ident">setter</span>(<span class="ident">into</span>))]</span>
     <span class="ident">uc_host</span>: <span class="ident">Cow</span><span class="op">&lt;</span><span class="lifetime">&#39;static</span>, <span class="ident">str</span><span class="op">&gt;</span>,

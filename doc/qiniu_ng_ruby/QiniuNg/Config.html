@@ -99,7 +99,20 @@
   
 </div>
 
-<h2>Defined Under Namespace</h2>
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>七牛客户端配置</p>
+
+<p>提供客户端必要的配置信息</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
 <p class="children">
   
     
@@ -109,22 +122,6 @@
     
   
 </p>
-
-  
-    <h2>
-      Constant Summary
-      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
-    </h2>
-
-    <dl class="constants">
-      
-        <dt id="DEFAULT_APPENDED_USER_AGENT-constant" class="">DEFAULT_APPENDED_USER_AGENT =
-          
-        </dt>
-        <dd><pre class="code"><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>qiniu-ruby</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="../QiniuNg.html#VERSION-constant" title="QiniuNg::VERSION (constant)">VERSION</a></span></span><span class='comma'>,</span> <span class='const'>RUBY_ENGINE</span><span class='comma'>,</span> <span class='const'>RUBY_ENGINE_VERSION</span><span class='comma'>,</span> <span class='const'>RUBY_PLATFORM</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
-      
-    </dl>
-  
 
 
 
@@ -143,7 +140,391 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(use_https: nil, api_host: nil, rs_host: nil, rsf_host: nil, uc_host: nil, uplog_host: nil, batch_max_operation_size: nil, http_connect_timeout: nil, http_low_transfer_speed: nil, http_low_transfer_speed_timeout: nil, http_request_retries: nil, http_request_retry_delay: nil, http_request_timeout: nil, tcp_keepalive_idle_timeout: nil, tcp_keepalive_probe_interval: nil, upload_block_size: nil, upload_threshold: nil, upload_token_lifetime: nil, upload_recorder_always_flush_records: nil, upload_recorder_root_directory: nil, upload_recorder_upload_block_lifetime: nil, builder: nil, config: nil)  &#x21d2; Config </a>
+      <a href="#api_host-instance_method" title="#api_host (instance method)">#<strong>api_host</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>API 服务器地址.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#api_url-instance_method" title="#api_url (instance method)">#<strong>api_url</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>API 服务器 URL.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#batch_max_operation_size-instance_method" title="#batch_max_operation_size (instance method)">#<strong>batch_max_operation_size</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>最大批量操作数.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains_manager_auto_persistent_disabled%3F-instance_method" title="#domains_manager_auto_persistent_disabled? (instance method)">#<strong>domains_manager_auto_persistent_disabled?</strong>  &#x21d2; Bool </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>域名管理器是否禁用自动持久化.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains_manager_auto_persistent_interval-instance_method" title="#domains_manager_auto_persistent_interval (instance method)">#<strong>domains_manager_auto_persistent_interval</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>域名管理器的自动持久化间隔时间.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains_manager_resolutions_cache_lifetime-instance_method" title="#domains_manager_resolutions_cache_lifetime (instance method)">#<strong>domains_manager_resolutions_cache_lifetime</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>域名管理器的域名解析缓存生命周期.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains_manager_url_frozen_duration-instance_method" title="#domains_manager_url_frozen_duration (instance method)">#<strong>domains_manager_url_frozen_duration</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>域名管理器的 URL 冻结时长.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains_manager_url_resolution_disabled%3F-instance_method" title="#domains_manager_url_resolution_disabled? (instance method)">#<strong>domains_manager_url_resolution_disabled?</strong>  &#x21d2; Bool </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>域名管理器是否禁用 URL 域名预解析.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains_manager_url_resolve_retries-instance_method" title="#domains_manager_url_resolve_retries (instance method)">#<strong>domains_manager_url_resolve_retries</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>域名管理器的 URL 域名预解析重试次数.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains_manager_url_resolve_retry_delay-instance_method" title="#domains_manager_url_resolve_retry_delay (instance method)">#<strong>domains_manager_url_resolve_retry_delay</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>域名管理器的 URL 域名预解析重试前等待时间.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#http_connect_timeout-instance_method" title="#http_connect_timeout (instance method)">#<strong>http_connect_timeout</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>HTTP 请求连接超时时长.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#http_low_transfer_speed-instance_method" title="#http_low_transfer_speed (instance method)">#<strong>http_low_transfer_speed</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>HTTP 最低传输速度维持时长.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#http_low_transfer_speed_timeout-instance_method" title="#http_low_transfer_speed_timeout (instance method)">#<strong>http_low_transfer_speed_timeout</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>HTTP 最低传输速度.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#http_request_retries-instance_method" title="#http_request_retries (instance method)">#<strong>http_request_retries</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>HTTP 请求重试次数.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#http_request_retry_delay-instance_method" title="#http_request_retry_delay (instance method)">#<strong>http_request_retry_delay</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>HTTP 请求重试前等待时间.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#http_request_timeout-instance_method" title="#http_request_timeout (instance method)">#<strong>http_request_timeout</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>HTTP 请求超时时长.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(use_https: nil, api_host: nil, rs_host: nil, rsf_host: nil, uc_host: nil, uplog_host: nil, batch_max_operation_size: nil, http_connect_timeout: nil, http_low_transfer_speed: nil, http_low_transfer_speed_timeout: nil, http_request_retries: nil, http_request_retry_delay: nil, http_request_timeout: nil, tcp_keepalive_idle_timeout: nil, tcp_keepalive_probe_interval: nil, upload_block_size: nil, upload_threshold: nil, upload_token_lifetime: nil, upload_recorder_always_flush_records: nil, upload_recorder_root_directory: nil, upload_recorder_upload_block_lifetime: nil)  &#x21d2; Object </a>
     
 
     
@@ -160,7 +541,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>A new instance of Config.</p>
+<p>创建客户端实例.</p>
 </div></span>
   
 </li>
@@ -169,7 +550,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#inspect-instance_method" title="#inspect (instance method)">#<strong>inspect</strong>  &#x21d2; Object </a>
+      <a href="#rs_host-instance_method" title="#rs_host (instance method)">#<strong>rs_host</strong>  &#x21d2; String </a>
     
 
     
@@ -183,7 +564,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>RS 服务器地址.</p>
+</div></span>
   
 </li>
 
@@ -191,7 +574,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#uplog_file_lock_policy-instance_method" title="#uplog_file_lock_policy (instance method)">#<strong>uplog_file_lock_policy</strong>  &#x21d2; Object </a>
+      <a href="#rs_url-instance_method" title="#rs_url (instance method)">#<strong>rs_url</strong>  &#x21d2; String </a>
     
 
     
@@ -205,7 +588,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>RS 服务器 URL.</p>
+</div></span>
   
 </li>
 
@@ -213,7 +598,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#uplog_file_max_size-instance_method" title="#uplog_file_max_size (instance method)">#<strong>uplog_file_max_size</strong>  &#x21d2; Object </a>
+      <a href="#rsf_host-instance_method" title="#rsf_host (instance method)">#<strong>rsf_host</strong>  &#x21d2; String </a>
     
 
     
@@ -227,7 +612,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>RSF 服务器地址.</p>
+</div></span>
   
 </li>
 
@@ -235,7 +622,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#uplog_file_upload_threshold-instance_method" title="#uplog_file_upload_threshold (instance method)">#<strong>uplog_file_upload_threshold</strong>  &#x21d2; Object </a>
+      <a href="#rsf_url-instance_method" title="#rsf_url (instance method)">#<strong>rsf_url</strong>  &#x21d2; String </a>
     
 
     
@@ -249,7 +636,465 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>RSF 服务器 URL.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tcp_keepalive_idle_timeout-instance_method" title="#tcp_keepalive_idle_timeout (instance method)">#<strong>tcp_keepalive_idle_timeout</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>TCP KeepAlive 空闲时长.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tcp_keepalive_probe_interval-instance_method" title="#tcp_keepalive_probe_interval (instance method)">#<strong>tcp_keepalive_probe_interval</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>TCP KeepAlive 探测包的发送间隔.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uc_host-instance_method" title="#uc_host (instance method)">#<strong>uc_host</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UC 服务器地址.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uc_url-instance_method" title="#uc_url (instance method)">#<strong>uc_url</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UC 服务器 URL.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#upload_block_size-instance_method" title="#upload_block_size (instance method)">#<strong>upload_block_size</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>上传分块尺寸.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#upload_recorder_always_flush_records%3F-instance_method" title="#upload_recorder_always_flush_records? (instance method)">#<strong>upload_recorder_always_flush_records?</strong>  &#x21d2; Bool </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>进度记录文件是否始终刷新.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#upload_recorder_root_directory-instance_method" title="#upload_recorder_root_directory (instance method)">#<strong>upload_recorder_root_directory</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>上传进度记录仪文件根目录.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#upload_recorder_upload_block_lifetime-instance_method" title="#upload_recorder_upload_block_lifetime (instance method)">#<strong>upload_recorder_upload_block_lifetime</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>文件分块有效期.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#upload_threshold-instance_method" title="#upload_threshold (instance method)">#<strong>upload_threshold</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>分片上传策略阙值.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#upload_token_lifetime-instance_method" title="#upload_token_lifetime (instance method)">#<strong>upload_token_lifetime</strong>  &#x21d2; Utils::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>上传凭证有效期.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uplog_enabled%3F-instance_method" title="#uplog_enabled? (instance method)">#<strong>uplog_enabled?</strong>  &#x21d2; Bool </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>是否启用上传日志记录仪.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uplog_file_lock_policy-instance_method" title="#uplog_file_lock_policy (instance method)">#<strong>uplog_file_lock_policy</strong>  &#x21d2; Symbol </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>上传日志文件锁策略.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uplog_file_max_size-instance_method" title="#uplog_file_max_size (instance method)">#<strong>uplog_file_max_size</strong>  &#x21d2; Symbol </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>上传日志文件的最大尺寸.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uplog_file_path-instance_method" title="#uplog_file_path (instance method)">#<strong>uplog_file_path</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>上传日志文件路径.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uplog_file_upload_threshold-instance_method" title="#uplog_file_upload_threshold (instance method)">#<strong>uplog_file_upload_threshold</strong>  &#x21d2; Symbol </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>上传日志文件的上传阙值.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uplog_host-instance_method" title="#uplog_host (instance method)">#<strong>uplog_host</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UpLog 服务器地址.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uplog_url-instance_method" title="#uplog_url (instance method)">#<strong>uplog_url</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UpLog 服务器 URL.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#use_https%3F-instance_method" title="#use_https? (instance method)">#<strong>use_https?</strong>  &#x21d2; Bool </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>是否使用 HTTPS 协议.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_agent-instance_method" title="#user_agent (instance method)">#<strong>user_agent</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>用户代理.</p>
+</div></span>
   
 </li>
 
@@ -263,7 +1108,7 @@
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    #<strong>initialize</strong>(use_https: nil, api_host: nil, rs_host: nil, rsf_host: nil, uc_host: nil, uplog_host: nil, batch_max_operation_size: nil, http_connect_timeout: nil, http_low_transfer_speed: nil, http_low_transfer_speed_timeout: nil, http_request_retries: nil, http_request_retry_delay: nil, http_request_timeout: nil, tcp_keepalive_idle_timeout: nil, tcp_keepalive_probe_interval: nil, upload_block_size: nil, upload_threshold: nil, upload_token_lifetime: nil, upload_recorder_always_flush_records: nil, upload_recorder_root_directory: nil, upload_recorder_upload_block_lifetime: nil, builder: nil, config: nil)  &#x21d2; <tt><span class='object_link'><a href="" title="QiniuNg::Config (class)">Config</a></span></tt> 
+    #<strong>initialize</strong>(use_https: nil, api_host: nil, rs_host: nil, rsf_host: nil, uc_host: nil, uplog_host: nil, batch_max_operation_size: nil, http_connect_timeout: nil, http_low_transfer_speed: nil, http_low_transfer_speed_timeout: nil, http_request_retries: nil, http_request_retry_delay: nil, http_request_timeout: nil, tcp_keepalive_idle_timeout: nil, tcp_keepalive_probe_interval: nil, upload_block_size: nil, upload_threshold: nil, upload_token_lifetime: nil, upload_recorder_always_flush_records: nil, upload_recorder_root_directory: nil, upload_recorder_upload_block_lifetime: nil)  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -272,26 +1117,398 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns a new instance of Config.</p>
+<p>创建客户端实例</p>
 
 
   </div>
 </div>
 <div class="tags">
-  
-<p class="tag_title">Raises:</p>
-<ul class="raise">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
     <li>
       
+        <span class='name'>use_https</span>
       
-        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>是否使用 HTTPS 协议，默认为使用 HTTPS 协议</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>api_host</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>API 服务器地址（仅需要指定主机地址和端口，无需包含协议），默认将会使用七牛公有云的 API 服务器地址，仅在使用私有云时才需要配置</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>rs_host</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>RS 服务器地址（仅需要指定主机地址和端口，无需包含协议），默认将会使用七牛公有云的 RS 服务器地址，仅在使用私有云时才需要配置</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>rsf_host</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>RSF 服务器地址（仅需要指定主机地址和端口，无需包含协议），默认将会使用七牛公有云的 RSF 服务器地址，仅在使用私有云时才需要配置</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>uc_host</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>UC 服务器地址（仅需要指定主机地址和端口，无需包含协议），默认将会使用七牛公有云的 UC 服务器地址，仅在使用私有云时才需要配置</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>uplog_host</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>UpLog 服务器地址（仅需要指定主机地址和端口，无需包含协议），默认将会使用七牛公有云的 UpLog 服务器地址，仅在使用私有云时才需要配置</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>batch_max_operation_size</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>最大批量操作数，默认为 1000</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>http_connect_timeout</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求连接超时时长，默认为 5 秒</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>http_request_timeout</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求超时时长，默认为 5 分钟</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>tcp_keepalive_idle_timeout</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>TCP KeepAlive 空闲时长，默认为 5 分钟</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>tcp_keepalive_probe_interval</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>TCP KeepAlive 探测包的发送间隔，默认为 5 秒</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>http_low_transfer_speed</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 最低传输速度，与 `http_low_transfer_speed_timeout` 配合使用，单位为字节/秒，默认为 1024 字节/秒</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>http_low_transfer_speed_timeout</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 最低传输速度维持时长，与 `http_low_transfer_speed` 配合使用，默认为 30 秒</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>http_request_retries</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求重试次数，当 SDK 发送 HTTP 请求时发生错误，且该错误可以通过重试来解决时，SDK 将重试的次数。默认为 3 次</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>http_request_retry_delay</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求重试前等待时间，当 SDK 发送 HTTP 请求时发生错误，且该错误可以通过重试来解决时，SDK
+将等待一段时间并且重试，每次实际等待时长为该项值的 50% - 100% 之间的随机时长。默认为 1 秒，也就是说每次等待 500 毫秒至 1
+秒间不等</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_block_size</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传分块尺寸，尺寸越小越适合弱网环境，必须是 4 MB 的倍数。单位为字节，默认为 4 MB</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_threshold</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>如果上传文件尺寸大于该值，将自动使用分片上传，否则，使用表单上传。单位为字节，默认为 4 MB</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_token_lifetime</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传凭证有效期，默认为 1 小时</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_recorder_always_flush_records</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>设置进度记录文件始终刷新，默认不刷新</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_recorder_root_directory</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>设置上传进度记录仪文件根目录</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_recorder_upload_block_lifetime</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>设置文件分块有效期。对于超过有效期的分块，SDK 将重新上传，确保所有分块在创建文件时均有效，默认为 7
+天，这是七牛公有云默认的配置。对于私有云的情况，需要参照私有云的配置来设置</p>
+</div>
       
     </li>
   
 </ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -299,11 +1516,6 @@
       <pre class="lines">
 
 
-9
-10
-11
-12
-13
 14
 15
 16
@@ -356,10 +1568,15 @@
 63
 64
 65
-66</pre>
+66
+67
+68
+69
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 14</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='label'>use_https:</span> <span class='kw'>nil</span><span class='comma'>,</span>
                <span class='label'>api_host:</span> <span class='kw'>nil</span><span class='comma'>,</span>
@@ -432,30 +1649,1705 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="inspect-instance_method">
+  <h3 class="signature first" id="api_host-instance_method">
   
-    #<strong>inspect</strong>  &#x21d2; <tt>Object</tt> 
-  
-
+    #<strong>api_host</strong>  &#x21d2; <tt>String</tt> 
   
 
   
-</h3><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>API 服务器地址</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>API 服务器地址</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-68
-69
-70</pre>
+</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_inspect'>inspect</span>
-  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#&lt;</span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&gt;</span><span class='tstring_end'>&quot;</span></span>
-<span class='kw'>end</span></pre>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="api_url-instance_method">
+  
+    #<strong>api_url</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>API 服务器 URL</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>API 服务器 URL</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="batch_max_operation_size-instance_method">
+  
+    #<strong>batch_max_operation_size</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>最大批量操作数</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>最大批量操作数</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 129</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains_manager_auto_persistent_disabled?-instance_method">
+  
+    #<strong>domains_manager_auto_persistent_disabled?</strong>  &#x21d2; <tt>Bool</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>域名管理器是否禁用自动持久化</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>域名管理器是否禁用自动持久化</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 102</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains_manager_auto_persistent_interval-instance_method">
+  
+    #<strong>domains_manager_auto_persistent_interval</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>域名管理器的自动持久化间隔时间</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>域名管理器的自动持久化间隔时间</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains_manager_resolutions_cache_lifetime-instance_method">
+  
+    #<strong>domains_manager_resolutions_cache_lifetime</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>域名管理器的域名解析缓存生命周期</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>域名管理器的域名解析缓存生命周期</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains_manager_url_frozen_duration-instance_method">
+  
+    #<strong>domains_manager_url_frozen_duration</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>域名管理器的 URL 冻结时长</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>域名管理器的 URL 冻结时长</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains_manager_url_resolution_disabled?-instance_method">
+  
+    #<strong>domains_manager_url_resolution_disabled?</strong>  &#x21d2; <tt>Bool</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>域名管理器是否禁用 URL 域名预解析</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>域名管理器是否禁用 URL 域名预解析</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 102</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains_manager_url_resolve_retries-instance_method">
+  
+    #<strong>domains_manager_url_resolve_retries</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>域名管理器的 URL 域名预解析重试次数</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>域名管理器的 URL 域名预解析重试次数</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 129</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains_manager_url_resolve_retry_delay-instance_method">
+  
+    #<strong>domains_manager_url_resolve_retry_delay</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>域名管理器的 URL 域名预解析重试前等待时间</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>域名管理器的 URL 域名预解析重试前等待时间</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="http_connect_timeout-instance_method">
+  
+    #<strong>http_connect_timeout</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>HTTP 请求连接超时时长</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求连接超时时长</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="http_low_transfer_speed-instance_method">
+  
+    #<strong>http_low_transfer_speed</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>HTTP 最低传输速度维持时长</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 最低传输速度维持时长</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 129</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="http_low_transfer_speed_timeout-instance_method">
+  
+    #<strong>http_low_transfer_speed_timeout</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>HTTP 最低传输速度</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 最低传输速度</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="http_request_retries-instance_method">
+  
+    #<strong>http_request_retries</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>HTTP 请求重试次数</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求重试次数</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 129</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="http_request_retry_delay-instance_method">
+  
+    #<strong>http_request_retry_delay</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>HTTP 请求重试前等待时间</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求重试前等待时间</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="http_request_timeout-instance_method">
+  
+    #<strong>http_request_timeout</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>HTTP 请求超时时长</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTTP 请求超时时长</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rs_host-instance_method">
+  
+    #<strong>rs_host</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>RS 服务器地址</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>RS 服务器地址</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rs_url-instance_method">
+  
+    #<strong>rs_url</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>RS 服务器 URL</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>RS 服务器 URL</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rsf_host-instance_method">
+  
+    #<strong>rsf_host</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>RSF 服务器地址</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>RSF 服务器地址</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rsf_url-instance_method">
+  
+    #<strong>rsf_url</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>RSF 服务器 URL</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>RSF 服务器 URL</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="tcp_keepalive_idle_timeout-instance_method">
+  
+    #<strong>tcp_keepalive_idle_timeout</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>TCP KeepAlive 空闲时长</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>TCP KeepAlive 空闲时长</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="tcp_keepalive_probe_interval-instance_method">
+  
+    #<strong>tcp_keepalive_probe_interval</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>TCP KeepAlive 探测包的发送间隔</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>TCP KeepAlive 探测包的发送间隔</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uc_host-instance_method">
+  
+    #<strong>uc_host</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UC 服务器地址</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>UC 服务器地址</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uc_url-instance_method">
+  
+    #<strong>uc_url</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UC 服务器 URL</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>UC 服务器 URL</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="upload_block_size-instance_method">
+  
+    #<strong>upload_block_size</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传分块尺寸</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传分块尺寸，单位为字节</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 129</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="upload_recorder_always_flush_records?-instance_method">
+  
+    #<strong>upload_recorder_always_flush_records?</strong>  &#x21d2; <tt>Bool</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>进度记录文件是否始终刷新</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>进度记录文件是否始终刷新</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 102</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="upload_recorder_root_directory-instance_method">
+  
+    #<strong>upload_recorder_root_directory</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传进度记录仪文件根目录</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传进度记录仪文件根目录</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="upload_recorder_upload_block_lifetime-instance_method">
+  
+    #<strong>upload_recorder_upload_block_lifetime</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>文件分块有效期</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>文件分块有效期</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="upload_threshold-instance_method">
+  
+    #<strong>upload_threshold</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>分片上传策略阙值</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>分片上传策略阙值，单位为字节</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 129</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="upload_token_lifetime-instance_method">
+  
+    #<strong>upload_token_lifetime</strong>  &#x21d2; <tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传凭证有效期</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Utils/Duration.html" title="QiniuNg::Utils::Duration (class)">Utils::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传凭证有效期</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 221</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uplog_enabled?-instance_method">
+  
+    #<strong>uplog_enabled?</strong>  &#x21d2; <tt>Bool</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>是否启用上传日志记录仪</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>是否启用上传日志记录仪</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 102</span>
+
+</pre>
     </td>
   </tr>
 </table>
@@ -464,36 +3356,65 @@
       <div class="method_details ">
   <h3 class="signature " id="uplog_file_lock_policy-instance_method">
   
-    #<strong>uplog_file_lock_policy</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>uplog_file_lock_policy</strong>  &#x21d2; <tt>Symbol</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传日志文件锁策略</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传日志文件锁策略</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148</pre>
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 278</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uplog_file_lock_policy'>uplog_file_lock_policy</span>
   <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
@@ -518,27 +3439,56 @@
       <div class="method_details ">
   <h3 class="signature " id="uplog_file_max_size-instance_method">
   
-    #<strong>uplog_file_max_size</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>uplog_file_max_size</strong>  &#x21d2; <tt>Symbol</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传日志文件的最大尺寸</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传日志文件的最大尺寸，单位为字节</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-157
-158
-159
-160
-161
-162</pre>
+305
+306
+307
+308
+309
+310</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 157</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 305</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uplog_file_max_size'>uplog_file_max_size</span>
   <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
@@ -552,29 +3502,113 @@
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="uplog_file_upload_threshold-instance_method">
+  <h3 class="signature " id="uplog_file_path-instance_method">
   
-    #<strong>uplog_file_upload_threshold</strong>  &#x21d2; <tt>Object</tt> 
-  
-
+    #<strong>uplog_file_path</strong>  &#x21d2; <tt>String</tt> 
   
 
   
-</h3><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传日志文件路径</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传日志文件路径</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-150
-151
-152
-153
-154
-155</pre>
+</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uplog_file_upload_threshold-instance_method">
+  
+    #<strong>uplog_file_upload_threshold</strong>  &#x21d2; <tt>Symbol</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传日志文件的上传阙值</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传日志文件的上传阙值，单位为字节</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+296
+297
+298
+299
+300
+301</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 296</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uplog_file_upload_threshold'>uplog_file_upload_threshold</span>
   <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
@@ -587,12 +3621,232 @@
 </table>
 </div>
     
+      <div class="method_details ">
+  <h3 class="signature " id="uplog_host-instance_method">
+  
+    #<strong>uplog_host</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UpLog 服务器地址</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>UpLog 服务器地址</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uplog_url-instance_method">
+  
+    #<strong>uplog_url</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UpLog 服务器 URL</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>UpLog 服务器 URL</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="use_https?-instance_method">
+  
+    #<strong>use_https?</strong>  &#x21d2; <tt>Bool</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>是否使用 HTTPS 协议</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>是否使用 HTTPS 协议</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 102</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="user_agent-instance_method">
+  
+    #<strong>user_agent</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>用户代理</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>用户代理</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 160</span>
+
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
   </div>
 
 </div>
 
       <div id="footer">
-  Generated on Tue Feb 25 08:02:47 2020 by
+  Generated on Tue Feb 25 11:51:28 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>
