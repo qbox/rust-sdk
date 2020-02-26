@@ -105,7 +105,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>上传凭证 Base64 解析错误</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -123,7 +134,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(qiniu_str)  &#x21d2; InvalidUploadTokenBase64DecodeError </a>
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(reason)  &#x21d2; InvalidUploadTokenBase64DecodeError </a>
     
 
     
@@ -140,7 +151,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>A new instance of InvalidUploadTokenBase64DecodeError.</p>
+<p>创建上传凭证 Base64 解析错误.</p>
 </div></span>
   
 </li>
@@ -162,18 +173,13 @@
   
   
   
-  
-  
-  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Error.html" title="QiniuNg::Error (class)">QiniuNg::Error</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="../Error.html#inspect-instance_method" title="QiniuNg::Error#inspect (method)">#inspect</a></span>, <span class='object_link'><a href="../Error.html#wrap_ffi_function-class_method" title="QiniuNg::Error.wrap_ffi_function (method)">wrap_ffi_function</a></span></p>
-
   <div id="constructor_details" class="method_details_list">
   <h2>Constructor Details</h2>
   
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    #<strong>initialize</strong>(qiniu_str)  &#x21d2; <tt><span class='object_link'><a href="" title="QiniuNg::Error::InvalidUploadTokenBase64DecodeError (class)">InvalidUploadTokenBase64DecodeError</a></span></tt> 
+    #<strong>initialize</strong>(reason)  &#x21d2; <tt><span class='object_link'><a href="" title="QiniuNg::Error::InvalidUploadTokenBase64DecodeError (class)">InvalidUploadTokenBase64DecodeError</a></span></tt> 
   
 
   
@@ -182,13 +188,33 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns a new instance of InvalidUploadTokenBase64DecodeError.</p>
+<p>创建上传凭证 Base64 解析错误</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>reason</span>
+      
+      
+        <span class='type'>(<tt>Bindings::QiniuNgStr</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>错误描述信息</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -196,16 +222,16 @@
       <pre class="lines">
 
 
-102
-103
-104
-105</pre>
+164
+165
+166
+167</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/error.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/error.rb', line 164</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_qiniu_str'>qiniu_str</span><span class='rparen'>)</span>
-  <span class='ivar'>@reason</span> <span class='op'>=</span> <span class='id identifier rubyid_qiniu_str'>qiniu_str</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_reason'>reason</span><span class='rparen'>)</span>
+  <span class='ivar'>@reason</span> <span class='op'>=</span> <span class='id identifier rubyid_reason'>reason</span>
   <span class='kw'>super</span><span class='lparen'>(</span><span class='ivar'>@reason</span><span class='period'>.</span><span class='id identifier rubyid_get_ptr'>get_ptr</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -219,7 +245,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Feb 26 03:44:14 2020 by
+  Generated on Wed Feb 26 04:40:42 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>

@@ -547,7 +547,7 @@
       <pre class="code"><span class="info file"># File 'lib/qiniu_ng/storage/uploader/upload_token.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_access_key'>access_key</span>
-  <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='symbol'>:access_key</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="../../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'><span class='object_link'><a href="../../Error.html#wrap_ffi_function-class_method" title="QiniuNg::Error.wrap_ffi_function (method)">wrap_ffi_function</a></span></span> <span class='kw'>do</span>
+  <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='symbol'>:access_key</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="../../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'>wrap_ffi_function</span> <span class='kw'>do</span>
                             <span class='ivar'>@upload_token</span><span class='period'>.</span><span class='id identifier rubyid_get_access_key'>get_access_key</span>
                           <span class='kw'>end</span>
   <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='symbol'>:access_key</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_get_ptr'>get_ptr</span>
@@ -617,7 +617,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_policy'>policy</span>
   <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='symbol'>:policy</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='kw'>begin</span>
-                        <span class='id identifier rubyid_policy'>policy</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'><span class='object_link'><a href="../../Error.html#wrap_ffi_function-class_method" title="QiniuNg::Error.wrap_ffi_function (method)">wrap_ffi_function</a></span></span> <span class='kw'>do</span>
+                        <span class='id identifier rubyid_policy'>policy</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'>wrap_ffi_function</span> <span class='kw'>do</span>
                                    <span class='ivar'>@upload_token</span><span class='period'>.</span><span class='id identifier rubyid_get_policy'>get_policy</span>
                                  <span class='kw'>end</span>
                         <span class='const'><span class='object_link'><a href="UploadPolicy.html" title="QiniuNg::Storage::Uploader::UploadPolicy (class)">UploadPolicy</a></span></span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='symbol'>:new</span><span class='comma'>,</span> <span class='id identifier rubyid_policy'>policy</span><span class='rparen'>)</span>
@@ -659,7 +659,7 @@
       <pre class="code"><span class="info file"># File 'lib/qiniu_ng/storage/uploader/upload_token.rb', line 52</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_token'>token</span>
-  <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='symbol'>:token</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="../../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'><span class='object_link'><a href="../../Error.html#wrap_ffi_function-class_method" title="QiniuNg::Error.wrap_ffi_function (method)">wrap_ffi_function</a></span></span> <span class='kw'>do</span>
+  <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='symbol'>:token</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="../../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'>wrap_ffi_function</span> <span class='kw'>do</span>
                        <span class='ivar'>@upload_token</span><span class='period'>.</span><span class='id identifier rubyid_get_token'>get_token</span>
                      <span class='kw'>end</span>
   <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='symbol'>:token</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_get_ptr'>get_ptr</span>
@@ -674,7 +674,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Feb 26 03:44:16 2020 by
+  Generated on Wed Feb 26 04:40:44 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>

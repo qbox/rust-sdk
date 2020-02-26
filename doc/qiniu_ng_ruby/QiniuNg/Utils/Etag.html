@@ -537,7 +537,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_from_file_path'>from_file_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_etag_result'>etag_result</span> <span class='op'>=</span> <span class='const'>FFI</span><span class='op'>::</span><span class='const'>MemoryPointer</span><span class='op'>::</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ETAG_SIZE-constant" title="QiniuNg::Utils::Etag::ETAG_SIZE (constant)">ETAG_SIZE</a></span></span><span class='rparen'>)</span>
-  <span class='const'><span class='object_link'><a href="../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'><span class='object_link'><a href="../Error.html#wrap_ffi_function-class_method" title="QiniuNg::Error.wrap_ffi_function (method)">wrap_ffi_function</a></span></span> <span class='kw'>do</span>
+  <span class='const'><span class='object_link'><a href="../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'>wrap_ffi_function</span> <span class='kw'>do</span>
     <span class='const'><span class='object_link'><a href="../Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Bindings/Etag.html" title="QiniuNg::Bindings::Etag (class)">Etag</a></span></span><span class='period'>.</span><span class='id identifier rubyid_from_file_path'><span class='object_link'><a href="../Bindings/Etag.html#from_file_path-class_method" title="QiniuNg::Bindings::Etag.from_file_path (method)">from_file_path</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_etag_result'>etag_result</span><span class='rparen'>)</span>
   <span class='kw'>end</span>
   <span class='id identifier rubyid_etag_result'>etag_result</span><span class='period'>.</span><span class='id identifier rubyid_read_bytes'>read_bytes</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ETAG_SIZE-constant" title="QiniuNg::Utils::Etag::ETAG_SIZE (constant)">ETAG_SIZE</a></span></span><span class='rparen'>)</span>
@@ -777,7 +777,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Feb 26 03:44:16 2020 by
+  Generated on Wed Feb 26 04:40:44 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>
