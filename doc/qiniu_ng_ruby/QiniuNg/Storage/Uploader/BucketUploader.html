@@ -99,7 +99,20 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>存储空间上传器</p>
 
+<p>为指定存储空间的上传准备初始化数据，可以反复使用以上传多个文件</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -117,33 +130,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(bucket_uploader_ffi)  &#x21d2; BucketUploader </a>
-    
-
-    
-  </span>
-  
-  
-    <span class="note title constructor">constructor</span>
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>A new instance of BucketUploader.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#upload_file-instance_method" title="#upload_file (instance method)">#<strong>upload_file</strong>(file, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; Object </a>
+      <a href="#upload_file-instance_method" title="#upload_file (instance method)">#<strong>upload_file</strong>(file, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; UploadResponse </a>
     
 
     
@@ -159,7 +146,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>上传文件.</p>
+</div></span>
   
 </li>
 
@@ -167,7 +156,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#upload_file_path-instance_method" title="#upload_file_path (instance method)">#<strong>upload_file_path</strong>(file_path, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; Object </a>
+      <a href="#upload_file_path-instance_method" title="#upload_file_path (instance method)">#<strong>upload_file_path</strong>(file_path, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; UploadResponse </a>
     
 
     
@@ -181,7 +170,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>根据文件路径上传文件.</p>
+</div></span>
   
 </li>
 
@@ -189,51 +180,6 @@
     </ul>
   
 
-<div id="constructor_details" class="method_details_list">
-  <h2>Constructor Details</h2>
-  
-    <div class="method_details first">
-  <h3 class="signature first" id="initialize-instance_method">
-  
-    #<strong>initialize</strong>(bucket_uploader_ffi)  &#x21d2; <tt><span class='object_link'><a href="" title="QiniuNg::Storage::Uploader::BucketUploader (class)">BucketUploader</a></span></tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns a new instance of BucketUploader.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-9
-10
-11</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/storage/uploader/bucket_uploader.rb', line 9</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_bucket_uploader_ffi'>bucket_uploader_ffi</span><span class='rparen'>)</span>
-  <span class='ivar'>@bucket_uploader</span> <span class='op'>=</span> <span class='id identifier rubyid_bucket_uploader_ffi'>bucket_uploader_ffi</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-  
-</div>
 
 
   <div id="instance_method_details" class="method_details_list">
@@ -243,7 +189,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="upload_file-instance_method">
   
-    #<strong>upload_file</strong>(file, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; <tt>Object</tt> 
+    #<strong>upload_file</strong>(file, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; <tt><span class='object_link'><a href="UploadResponse.html" title="QiniuNg::Storage::Uploader::UploadResponse (class)">UploadResponse</a></span></tt> 
   
 
   
@@ -253,35 +199,276 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>上传文件</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>file</span>
+      
+      
+        <span class='type'>(<tt>IO</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>要上传的文件</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_token</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="UploadToken.html" title="QiniuNg::Storage::Uploader::UploadToken (class)">UploadToken</a></span></tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传凭证</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>对象名称</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>file_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>原始文件名称</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>vars</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>自定义变量 <a href="https://developer.qiniu.com/kodo/manual/1235/vars#xvar" target="_parent" title="https://developer.qiniu.com/kodo/manual/1235/vars#xvar">https://developer.qiniu.com/kodo/manual/1235/vars#xvar</a></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>metadata</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>元数据</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>checksum_enabled</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>是否启用文件校验，默认总是启用，且不推荐禁用</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>resumable_policy</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>分片上传策略，可以接受 :default, :threshold, :always_be_resumeable,
+:never_be_resumeable 四种取值 默认且推荐使用 default 策略</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>on_uploading_progress</span>
+      
+      
+        <span class='type'>(<tt>Lambda</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传进度回调，需要提供一个带有两个参数的闭包函数，第一个参数为已经上传的数据量，第二个参数为总数据量（如果总数据量未知，将返回 0），没有返回值</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_threshold</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>分片上传策略阙值，仅当 resumable_policy 为 :threshold 时起效，为其设置分片上传的阙值</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>thread_pool_size</span>
+      
+      
+        <span class='type'>(<tt>Ingeger</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传线程池尺寸，默认使用默认的线程池策略</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>max_concurrency</span>
+      
+      
+        <span class='type'>(<tt>Ingeger</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>最大并发度，默认与线程池大小相同</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="UploadResponse.html" title="QiniuNg::Storage::Uploader::UploadResponse (class)">UploadResponse</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传响应</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>参数错误</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
 53
 54
 55
@@ -301,10 +488,33 @@
 69
 70
 71
-72</pre>
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/storage/uploader/bucket_uploader.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/storage/uploader/bucket_uploader.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_upload_file'>upload_file</span><span class='lparen'>(</span><span class='id identifier rubyid_file'>file</span><span class='comma'>,</span> <span class='label'>upload_token:</span><span class='comma'>,</span> <span class='label'>key:</span> <span class='kw'>nil</span><span class='comma'>,</span>
                                      <span class='label'>file_name:</span> <span class='kw'>nil</span><span class='comma'>,</span>
@@ -357,52 +567,316 @@
       <div class="method_details ">
   <h3 class="signature " id="upload_file_path-instance_method">
   
-    #<strong>upload_file_path</strong>(file_path, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; <tt>Object</tt> 
+    #<strong>upload_file_path</strong>(file_path, upload_token:, key: nil, file_name: nil, mime: nil, vars: nil, metadata: nil, checksum_enabled: nil, resumable_policy: nil, on_uploading_progress: nil, upload_threshold: nil, thread_pool_size: nil, max_concurrency: nil)  &#x21d2; <tt><span class='object_link'><a href="UploadResponse.html" title="QiniuNg::Storage::Uploader::UploadResponse (class)">UploadResponse</a></span></tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>根据文件路径上传文件</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>file_path</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>要上传的文件路径</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_token</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="UploadToken.html" title="QiniuNg::Storage::Uploader::UploadToken (class)">UploadToken</a></span></tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传凭证</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>对象名称</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>file_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>原始文件名称</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>vars</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>自定义变量 <a href="https://developer.qiniu.com/kodo/manual/1235/vars#xvar" target="_parent" title="https://developer.qiniu.com/kodo/manual/1235/vars#xvar">https://developer.qiniu.com/kodo/manual/1235/vars#xvar</a></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>metadata</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>元数据</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>checksum_enabled</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>是否启用文件校验，默认总是启用，且不推荐禁用</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>resumable_policy</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>分片上传策略，可以接受 :default, :threshold, :always_be_resumeable,
+:never_be_resumeable 四种取值 默认且推荐使用 default 策略</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>on_uploading_progress</span>
+      
+      
+        <span class='type'>(<tt>Lambda</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传进度回调，需要提供一个带有两个参数的闭包函数，第一个参数为已经上传的数据量，第二个参数为总数据量（如果总数据量未知，将返回 0），没有返回值</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>upload_threshold</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>分片上传策略阙值，仅当 resumable_policy 为 :threshold 时起效，为其设置分片上传的阙值</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>thread_pool_size</span>
+      
+      
+        <span class='type'>(<tt>Ingeger</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传线程池尺寸，默认使用默认的线程池策略</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>max_concurrency</span>
+      
+      
+        <span class='type'>(<tt>Ingeger</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>最大并发度，默认与线程池大小相同</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="UploadResponse.html" title="QiniuNg::Storage::Uploader::UploadResponse (class)">UploadResponse</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>上传响应</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>参数错误</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105</pre>
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/storage/uploader/bucket_uploader.rb', line 75</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/storage/uploader/bucket_uploader.rb', line 115</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_upload_file_path'>upload_file_path</span><span class='lparen'>(</span><span class='id identifier rubyid_file_path'>file_path</span><span class='comma'>,</span> <span class='label'>upload_token:</span><span class='comma'>,</span> <span class='label'>key:</span> <span class='kw'>nil</span><span class='comma'>,</span>
                                                <span class='label'>file_name:</span> <span class='kw'>nil</span><span class='comma'>,</span>
@@ -445,7 +919,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Feb 26 07:20:30 2020 by
+  Generated on Wed Feb 26 09:38:50 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>
