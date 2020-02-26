@@ -303,12 +303,12 @@
       <pre class="lines">
 
 
-1333
-1334
-1335</pre>
+1341
+1342
+1343</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1333</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1341</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_instance'>instance</span><span class='rparen'>)</span>
   <span class='ivar'>@instance</span> <span class='op'>=</span> <span class='id identifier rubyid_instance'>instance</span>
@@ -351,12 +351,12 @@
       <pre class="lines">
 
 
-1332
-1333
-1334</pre>
+1340
+1341
+1342</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1332</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1340</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_instance'>instance</span>
   <span class='ivar'>@instance</span>
@@ -388,16 +388,16 @@
       <pre class="lines">
 
 
-1336
-1337
-1338
-1339
-1340
-1341
-1342</pre>
+1344
+1345
+1346
+1347
+1348
+1349
+1350</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1336</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1344</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_bucket_names'>bucket_names</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='rparen'>)</span>
   <span class='id identifier rubyid___internal__identify__0'>__internal__identify__0</span> <span class='op'>=</span> <span class='const'>CoreFFI</span><span class='op'>::</span><span class='const'><span class='object_link'><a href="CoreFFI/QiniuNgStrListT.html" title="QiniuNg::Bindings::CoreFFI::QiniuNgStrListT (class)">QiniuNgStrListT</a></span></span><span class='op'>::</span><span class='id identifier rubyid_new'>new</span>
@@ -426,15 +426,15 @@
       <pre class="lines">
 
 
-1343
-1344
-1345
-1346
-1347
-1348</pre>
+1351
+1352
+1353
+1354
+1355
+1356</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1343</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1351</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_create_bucket'>create_bucket</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='comma'>,</span> <span class='id identifier rubyid_bucket_name'>bucket_name</span><span class='comma'>,</span> <span class='id identifier rubyid_region_id'>region_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid___internal__identify__0'>__internal__identify__0</span> <span class='op'>=</span> <span class='id identifier rubyid_bucket_name'>bucket_name</span><span class='op'>&amp;.</span><span class='id identifier rubyid_encode'>encode</span><span class='lparen'>(</span><span class='const'>Encoding</span><span class='op'>::</span><span class='const'>UTF_8</span><span class='rparen'>)</span>
@@ -462,16 +462,16 @@
       <pre class="lines">
 
 
-1349
-1350
-1351
-1352
-1353
-1354
-1355</pre>
+1357
+1358
+1359
+1360
+1361
+1362
+1363</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1349</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1357</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_create_bucket_with_customized_region_id'>create_bucket_with_customized_region_id</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='comma'>,</span> <span class='id identifier rubyid_bucket_name'>bucket_name</span><span class='comma'>,</span> <span class='id identifier rubyid_region_id'>region_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid___internal__identify__0'>__internal__identify__0</span> <span class='op'>=</span> <span class='id identifier rubyid_bucket_name'>bucket_name</span><span class='op'>&amp;.</span><span class='id identifier rubyid_encode'>encode</span><span class='lparen'>(</span><span class='const'>Encoding</span><span class='op'>::</span><span class='const'>UTF_8</span><span class='rparen'>)</span>
@@ -500,15 +500,15 @@
       <pre class="lines">
 
 
-1356
-1357
-1358
-1359
-1360
-1361</pre>
+1364
+1365
+1366
+1367
+1368
+1369</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1356</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1364</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_drop_bucket'>drop_bucket</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='comma'>,</span> <span class='id identifier rubyid_bucket_name'>bucket_name</span><span class='rparen'>)</span>
   <span class='id identifier rubyid___internal__identify__0'>__internal__identify__0</span> <span class='op'>=</span> <span class='id identifier rubyid_bucket_name'>bucket_name</span><span class='op'>&amp;.</span><span class='id identifier rubyid_encode'>encode</span><span class='lparen'>(</span><span class='const'>Encoding</span><span class='op'>::</span><span class='const'>UTF_8</span><span class='rparen'>)</span>
@@ -526,7 +526,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Feb 26 04:44:58 2020 by
+  Generated on Wed Feb 26 07:20:30 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>

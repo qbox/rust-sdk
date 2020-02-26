@@ -325,13 +325,13 @@
       <pre class="lines">
 
 
-1800
-1801
-1802
-1803</pre>
+1808
+1809
+1810
+1811</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1800</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1808</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_instance'>instance</span><span class='rparen'>)</span>
   <span class='ivar'>@instance</span> <span class='op'>=</span> <span class='id identifier rubyid_instance'>instance</span>
@@ -375,12 +375,12 @@
       <pre class="lines">
 
 
-1799
-1800
-1801</pre>
+1807
+1808
+1809</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1799</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1807</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_instance'>instance</span>
   <span class='ivar'>@instance</span>
@@ -412,14 +412,14 @@
       <pre class="lines">
 
 
-1804
-1805
-1806
-1807
-1808</pre>
+1812
+1813
+1814
+1815
+1816</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1804</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1812</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_finalize'>finalize</span><span class='lparen'>(</span><span class='id identifier rubyid_instance'>instance</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_proc'>proc</span> <span class='kw'>do</span>
@@ -452,12 +452,12 @@
       <pre class="lines">
 
 
-1809
-1810
-1811</pre>
+1817
+1818
+1819</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1809</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1817</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hash'>get_hash</span><span class='lparen'>(</span><span class='id identifier rubyid_result_ptr'>result_ptr</span><span class='comma'>,</span> <span class='id identifier rubyid_result_size'>result_size</span><span class='rparen'>)</span>
   <span class='const'>CoreFFI</span><span class='op'>::</span><span class='id identifier rubyid_qiniu_ng_upload_response_get_hash'>qiniu_ng_upload_response_get_hash</span><span class='lparen'>(</span><span class='ivar'>@instance</span><span class='comma'>,</span> <span class='id identifier rubyid_result_ptr'>result_ptr</span><span class='comma'>,</span> <span class='id identifier rubyid_result_size'>result_size</span><span class='rparen'>)</span>
@@ -482,14 +482,14 @@
       <pre class="lines">
 
 
-1812
-1813
-1814
-1815
-1816</pre>
+1820
+1821
+1822
+1823
+1824</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1812</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1820</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_key'>get_key</span>
   <span class='id identifier rubyid___internal__identify__0'>__internal__identify__0</span> <span class='op'>=</span> <span class='const'>CoreFFI</span><span class='op'>::</span><span class='id identifier rubyid_qiniu_ng_upload_response_get_key'>qiniu_ng_upload_response_get_key</span><span class='lparen'>(</span><span class='ivar'>@instance</span><span class='rparen'>)</span>
@@ -516,14 +516,14 @@
       <pre class="lines">
 
 
-1817
-1818
-1819
-1820
-1821</pre>
+1825
+1826
+1827
+1828
+1829</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1817</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1825</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_string'>get_string</span>
   <span class='id identifier rubyid___internal__identify__0'>__internal__identify__0</span> <span class='op'>=</span> <span class='const'>CoreFFI</span><span class='op'>::</span><span class='id identifier rubyid_qiniu_ng_upload_response_get_string'>qiniu_ng_upload_response_get_string</span><span class='lparen'>(</span><span class='ivar'>@instance</span><span class='rparen'>)</span>
@@ -550,12 +550,12 @@
       <pre class="lines">
 
 
-1822
-1823
-1824</pre>
+1830
+1831
+1832</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1822</span>
+      <pre class="code"><span class="info file"># File 'lib/qiniu_ng/bindings.rb', line 1830</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_freed'>is_freed</span>
   <span class='const'>CoreFFI</span><span class='op'>::</span><span class='id identifier rubyid_qiniu_ng_upload_response_is_freed'>qiniu_ng_upload_response_is_freed</span><span class='lparen'>(</span><span class='ivar'>@instance</span><span class='rparen'>)</span>
@@ -570,7 +570,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Feb 26 04:44:58 2020 by
+  Generated on Wed Feb 26 07:20:30 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>
