@@ -359,7 +359,7 @@
       <pre class="code"><span class="info file"># File 'lib/qiniu_ng/utils/etag.rb', line 52</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
-  <span class='ivar'>@etag</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Bindings/Etag.html" title="QiniuNg::Bindings::Etag (class)">Etag</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new!'><span class='object_link'><a href="../Bindings/Etag.html#new!-class_method" title="QiniuNg::Bindings::Etag.new! (method)">new!</a></span></span>
+  <span class='ivar'>@etag</span> <span class='op'>=</span> <span class='const'>Bindings</span><span class='op'>::</span><span class='const'>Etag</span><span class='period'>.</span><span class='id identifier rubyid_new!'>new!</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -452,7 +452,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_from_data'>from_data</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_etag_result'>etag_result</span> <span class='op'>=</span> <span class='const'>FFI</span><span class='op'>::</span><span class='const'>MemoryPointer</span><span class='op'>::</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ETAG_SIZE-constant" title="QiniuNg::Utils::Etag::ETAG_SIZE (constant)">ETAG_SIZE</a></span></span><span class='rparen'>)</span>
-  <span class='const'><span class='object_link'><a href="../Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Bindings/Etag.html" title="QiniuNg::Bindings::Etag (class)">Etag</a></span></span><span class='period'>.</span><span class='id identifier rubyid_from_buffer'><span class='object_link'><a href="../Bindings/Etag.html#from_buffer-class_method" title="QiniuNg::Bindings::Etag.from_buffer (method)">from_buffer</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_etag_result'>etag_result</span><span class='rparen'>)</span>
+  <span class='const'>Bindings</span><span class='op'>::</span><span class='const'>Etag</span><span class='period'>.</span><span class='id identifier rubyid_from_buffer'>from_buffer</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_etag_result'>etag_result</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_etag_result'>etag_result</span><span class='period'>.</span><span class='id identifier rubyid_read_bytes'>read_bytes</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ETAG_SIZE-constant" title="QiniuNg::Utils::Etag::ETAG_SIZE (constant)">ETAG_SIZE</a></span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -538,7 +538,7 @@
 <span class='kw'>def</span> <span class='id identifier rubyid_from_file_path'>from_file_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_etag_result'>etag_result</span> <span class='op'>=</span> <span class='const'>FFI</span><span class='op'>::</span><span class='const'>MemoryPointer</span><span class='op'>::</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ETAG_SIZE-constant" title="QiniuNg::Utils::Etag::ETAG_SIZE (constant)">ETAG_SIZE</a></span></span><span class='rparen'>)</span>
   <span class='const'><span class='object_link'><a href="../../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'>wrap_ffi_function</span> <span class='kw'>do</span>
-    <span class='const'><span class='object_link'><a href="../Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Bindings/Etag.html" title="QiniuNg::Bindings::Etag (class)">Etag</a></span></span><span class='period'>.</span><span class='id identifier rubyid_from_file_path'><span class='object_link'><a href="../Bindings/Etag.html#from_file_path-class_method" title="QiniuNg::Bindings::Etag.from_file_path (method)">from_file_path</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_etag_result'>etag_result</span><span class='rparen'>)</span>
+    <span class='const'>Bindings</span><span class='op'>::</span><span class='const'>Etag</span><span class='period'>.</span><span class='id identifier rubyid_from_file_path'>from_file_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_etag_result'>etag_result</span><span class='rparen'>)</span>
   <span class='kw'>end</span>
   <span class='id identifier rubyid_etag_result'>etag_result</span><span class='period'>.</span><span class='id identifier rubyid_read_bytes'>read_bytes</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ETAG_SIZE-constant" title="QiniuNg::Utils::Etag::ETAG_SIZE (constant)">ETAG_SIZE</a></span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -629,7 +629,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_from_io'>from_io</span><span class='lparen'>(</span><span class='id identifier rubyid_io'>io</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_binmode'>binmode</span>
-  <span class='id identifier rubyid_e'>e</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Bindings/Etag.html" title="QiniuNg::Bindings::Etag (class)">Etag</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new!'><span class='object_link'><a href="../Bindings/Etag.html#new!-class_method" title="QiniuNg::Bindings::Etag.new! (method)">new!</a></span></span>
+  <span class='id identifier rubyid_e'>e</span> <span class='op'>=</span> <span class='const'>Bindings</span><span class='op'>::</span><span class='const'>Etag</span><span class='period'>.</span><span class='id identifier rubyid_new!'>new!</span>
   <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span><span class='lparen'>(</span><span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>22</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='kw'>until</span> <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_eof?'>eof?</span>
   <span class='id identifier rubyid_etag_result'>etag_result</span> <span class='op'>=</span> <span class='const'>FFI</span><span class='op'>::</span><span class='const'>MemoryPointer</span><span class='op'>::</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ETAG_SIZE-constant" title="QiniuNg::Utils::Etag::ETAG_SIZE (constant)">ETAG_SIZE</a></span></span><span class='rparen'>)</span>
   <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_result'>result</span><span class='lparen'>(</span><span class='id identifier rubyid_etag_result'>etag_result</span><span class='rparen'>)</span>
@@ -777,7 +777,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Feb 27 08:29:19 2020 by
+  Generated on Thu Feb 27 08:42:03 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>

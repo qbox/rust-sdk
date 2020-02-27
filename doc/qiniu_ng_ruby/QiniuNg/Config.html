@@ -1633,7 +1633,7 @@
   <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_upload_recorder_root_directory'>upload_recorder_root_directory</span> <span class='op'>=</span> <span class='id identifier rubyid_upload_recorder_root_directory'>upload_recorder_root_directory</span> <span class='kw'>unless</span> <span class='id identifier rubyid_upload_recorder_root_directory'>upload_recorder_root_directory</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
   <span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_upload_recorder_upload_block_lifetime'>upload_recorder_upload_block_lifetime</span> <span class='op'>=</span> <span class='id identifier rubyid_upload_recorder_upload_block_lifetime'>upload_recorder_upload_block_lifetime</span> <span class='kw'>unless</span> <span class='id identifier rubyid_upload_recorder_upload_block_lifetime'>upload_recorder_upload_block_lifetime</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
   <span class='ivar'>@config</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../QiniuNg.html" title="QiniuNg (module)">QiniuNg</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Error.html" title="QiniuNg::Error (class)">Error</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap_ffi_function'>wrap_ffi_function</span> <span class='kw'>do</span>
-              <span class='const'><span class='object_link'><a href="Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Bindings/Config.html" title="QiniuNg::Bindings::Config (class)">Config</a></span></span><span class='period'>.</span><span class='id identifier rubyid_build'><span class='object_link'><a href="Bindings/Config.html#build-class_method" title="QiniuNg::Bindings::Config.build (method)">build</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_instance_variable_get'>instance_variable_get</span><span class='lparen'>(</span><span class='symbol'>:@builder</span><span class='rparen'>)</span><span class='rparen'>)</span>
+              <span class='const'>Bindings</span><span class='op'>::</span><span class='const'>Config</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span><span class='id identifier rubyid_builder'>builder</span><span class='period'>.</span><span class='id identifier rubyid_instance_variable_get'>instance_variable_get</span><span class='lparen'>(</span><span class='symbol'>:@builder</span><span class='rparen'>)</span><span class='rparen'>)</span>
             <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -3417,7 +3417,7 @@
       <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 278</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uplog_file_lock_policy'>uplog_file_lock_policy</span>
-  <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'>Bindings</span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_policy'>policy</span> <span class='op'>=</span> <span class='id identifier rubyid_core_ffi'>core_ffi</span><span class='op'>::</span><span class='const'>QiniuNgUploadLoggerLockPolicyTWrapper</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
   <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>unless</span> <span class='ivar'>@config</span><span class='period'>.</span><span class='id identifier rubyid_get_uplog_file_lock_policy'>get_uplog_file_lock_policy</span><span class='lparen'>(</span><span class='id identifier rubyid_policy'>policy</span><span class='rparen'>)</span>
   <span class='kw'>case</span> <span class='id identifier rubyid_policy'>policy</span><span class='lbracket'>[</span><span class='symbol'>:inner</span><span class='rbracket'>]</span>
@@ -3491,7 +3491,7 @@
       <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 305</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uplog_file_max_size'>uplog_file_max_size</span>
-  <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'>Bindings</span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_u32'>u32</span> <span class='op'>=</span> <span class='id identifier rubyid_core_ffi'>core_ffi</span><span class='op'>::</span><span class='const'>U32</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
   <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>unless</span> <span class='ivar'>@config</span><span class='period'>.</span><span class='id identifier rubyid_get_uplog_file_max_size'>get_uplog_file_max_size</span><span class='lparen'>(</span><span class='id identifier rubyid_u32'>u32</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_u32'>u32</span><span class='lbracket'>[</span><span class='symbol'>:value</span><span class='rbracket'>]</span>
@@ -3611,7 +3611,7 @@
       <pre class="code"><span class="info file"># File 'lib/qiniu_ng/config.rb', line 296</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uplog_file_upload_threshold'>uplog_file_upload_threshold</span>
-  <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_core_ffi'>core_ffi</span> <span class='op'>=</span> <span class='const'>Bindings</span><span class='period'>.</span><span class='id identifier rubyid_const_get'>const_get</span><span class='lparen'>(</span><span class='symbol'>:CoreFFI</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_u32'>u32</span> <span class='op'>=</span> <span class='id identifier rubyid_core_ffi'>core_ffi</span><span class='op'>::</span><span class='const'>U32</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
   <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>unless</span> <span class='ivar'>@config</span><span class='period'>.</span><span class='id identifier rubyid_get_uplog_file_upload_threshold'>get_uplog_file_upload_threshold</span><span class='lparen'>(</span><span class='id identifier rubyid_u32'>u32</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_u32'>u32</span><span class='lbracket'>[</span><span class='symbol'>:value</span><span class='rbracket'>]</span>
@@ -3846,7 +3846,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Feb 27 08:29:17 2020 by
+  Generated on Thu Feb 27 08:42:02 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>

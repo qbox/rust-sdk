@@ -269,7 +269,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>config must be instance of Config</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../Config.html" title="QiniuNg::Config (class)">Config</a></span></span><span class='rparen'>)</span>
-  <span class='ivar'>@upload_manager</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Bindings.html" title="QiniuNg::Bindings (module)">Bindings</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Bindings/UploadManager.html" title="QiniuNg::Bindings::UploadManager (class)">UploadManager</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new!'><span class='object_link'><a href="../Bindings/UploadManager.html#new!-class_method" title="QiniuNg::Bindings::UploadManager.new! (method)">new!</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_instance_variable_get'>instance_variable_get</span><span class='lparen'>(</span><span class='symbol'>:@config</span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='ivar'>@upload_manager</span> <span class='op'>=</span> <span class='const'>Bindings</span><span class='op'>::</span><span class='const'>UploadManager</span><span class='period'>.</span><span class='id identifier rubyid_new!'>new!</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_instance_variable_get'>instance_variable_get</span><span class='lparen'>(</span><span class='symbol'>:@config</span><span class='rparen'>)</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -423,7 +423,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Feb 27 08:29:19 2020 by
+  Generated on Thu Feb 27 08:42:03 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.5.1).
 </div>
