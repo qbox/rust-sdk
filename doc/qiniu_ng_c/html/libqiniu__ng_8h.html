@@ -12118,11 +12118,11 @@ SDK 会自动重试，或出错退出
 </div><div class="memdoc">
 
 <p>设置自定义对象名称 </p>
-<p>支持支持<a href="https://developer.qiniu.com/kodo/manual/1235/vars#magicvar">魔法变量</a>和<a href="https://developer.qiniu.com/kodo/manual/1235/vars#xvar">自定义变量</a> </p><dl class="params"><dt>参数</dt><dd>
+<p>支持<a href="https://developer.qiniu.com/kodo/manual/1235/vars#magicvar">魔法变量</a>和<a href="https://developer.qiniu.com/kodo/manual/1235/vars#xvar">自定义变量</a> </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">builder</td><td>客户端配置生成器实例 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">save_as</td><td>对象名称 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">force</td><td>当它为 <code>false</code> 时，<code>save_as</code> 字段仅当用户上传的时候没有主动指定对象名时起作用。当它为 <code>true</code> 时，将强制按 <code>save_as</code> 字段的格式命名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">force</td><td>当它为 <code>false</code> 时，<code>save_as</code> 字段仅当用户上传的时候没有主动指定对象名时起作用。当它为 <code>true</code> 时，将强制按 <code>save_as</code> 字段的内容命名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -12488,7 +12488,7 @@ SDK 会自动重试，或出错退出
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="structqiniu__ng__str__list__t.html" title="字符串列表 ">qiniu_ng_str_list_t</a></td><td>回调请求的 URL 列表 </td></tr>
+    <tr><td class="paramname"><a class="el" href="structqiniu__ng__str__list__t.html" title="字符串列表 ">qiniu_ng_str_list_t</a></td><td>返回回调请求的 URL 列表 </td></tr>
   </table>
   </dd>
 </dl>

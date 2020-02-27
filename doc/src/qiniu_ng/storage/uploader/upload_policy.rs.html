@@ -1387,9 +1387,9 @@
 
     <span class="doccomment">/// 自定义对象名称</span>
     <span class="doccomment">///</span>
-    <span class="doccomment">/// 支持支持[魔法变量](https://developer.qiniu.com/kodo/manual/1235/vars#magicvar)和[自定义变量](https://developer.qiniu.com/kodo/manual/1235/vars#xvar)。</span>
+    <span class="doccomment">/// 支持[魔法变量](https://developer.qiniu.com/kodo/manual/1235/vars#magicvar)和[自定义变量](https://developer.qiniu.com/kodo/manual/1235/vars#xvar)。</span>
     <span class="doccomment">/// `force` 为 `false` 时，`save_as` 字段仅当用户上传的时候没有主动指定对象名时起作用，</span>
-    <span class="doccomment">/// `force` 为 `true` 时，将强制按 `save_as` 字段的格式命名</span>
+    <span class="doccomment">/// `force` 为 `true` 时，将强制按 `save_as` 字段的内容命名</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">save_as</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">save_as</span>: <span class="kw">impl</span> <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">Cow</span><span class="op">&lt;</span><span class="lifetime">&#39;p</span>, <span class="ident">str</span><span class="op">&gt;&gt;</span>, <span class="ident">force</span>: <span class="ident">bool</span>) <span class="op">-&gt;</span> <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">Self</span> {
         <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">save_key</span> <span class="op">=</span> <span class="prelude-val">Some</span>(<span class="ident">save_as</span>.<span class="ident">into</span>());
         <span class="kw">if</span> <span class="ident">force</span> {
