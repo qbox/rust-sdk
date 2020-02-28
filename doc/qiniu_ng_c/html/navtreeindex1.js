@@ -228,7 +228,7 @@ var NAVTREEINDEX1 =
 "structqiniu__ng__invalid__upload__token__error__t.html#a77e24b1950f8bacab00d231d8a0500d7":[1,0,23,0],
 "structqiniu__ng__readable__t.html":[1,0,24],
 "structqiniu__ng__readable__t.html#a009b64f92a0a94fb149338e50ca6171d":[1,0,24,0],
-"structqiniu__ng__readable__t.html#a5c4964b6c644a1c75cc31209db632fbc":[1,0,24,1],
+"structqiniu__ng__readable__t.html#a89a7803f51d8cf6c21e2e086bf45e9ea":[1,0,24,1],
 "structqiniu__ng__region__builder__t.html":[1,0,25],
 "structqiniu__ng__region__builder__t.html#a26520d6e45770afe2f1bd793ad6306a7":[1,0,25,0],
 "structqiniu__ng__region__t.html":[1,0,26],
